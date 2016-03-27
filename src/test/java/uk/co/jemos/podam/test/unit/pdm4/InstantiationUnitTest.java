@@ -105,7 +105,7 @@ public class InstantiationUnitTest {
 		PojoWithFactoryMethods pojo = factory.manufacturePojoWithFullData(PojoWithFactoryMethods.class);
 		assertNull("POJO should not be created", pojo);
 		assertEquals("Invocation order has changed", 7, PojoWithFactoryMethods.invocationOrder.size());
-		assertEquals("Invocation order has changed", "PodamConstructor(str,bool)", PojoWithFactoryMethods.invocationOrder.get(0));
+		assertEquals("Invocation order has changed", "PodamConstructor(str,int)", PojoWithFactoryMethods.invocationOrder.get(0));
 		assertEquals("Invocation order has changed", "PodamConstructor(str,abstract)", PojoWithFactoryMethods.invocationOrder.get(1));
 		assertEquals("Invocation order has changed", "PodamConstructor(str)", PojoWithFactoryMethods.invocationOrder.get(2));
 		assertEquals("Invocation order has changed", "int,int", PojoWithFactoryMethods.invocationOrder.get(3));
